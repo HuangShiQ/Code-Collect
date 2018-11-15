@@ -1,0 +1,15 @@
+1. http://pub.ist.ac.at/~vnk/software.html
+
+2. https://vision.cs.uwaterloo.ca/code.html
+
+3. https://www.peterkovesi.com/projects/index.html
+
+4. https://www.codeproject.com/Articles/20869/2D-Fast-Wavelet-Transform-Library-for-Image-Proces
+
+5. http://vision.middlebury.edu/MRF/code/
+
+6. https://www.cs.mcgill.ca/~fmanna/ecse626/project.htm#codedata
+
+7. https://cs.uwaterloo.ca/~yboykov/
+
+8. http://www.engr.uconn.edu/~cmli/
