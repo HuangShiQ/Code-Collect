@@ -1,0 +1,16 @@
+Errata for paper: 
+    Ellipse Detection Using Randomized Hough Transform May 20, 2002
+
+Errata last updated: January 22, 2003
+
+pg 10 Clarification for finding mx and my from the points X1 and X2.
+    X1x refers to the x component of the point X1 and X1y refers to the
+    y component. (I don't know what possessd me to use X for a point's name.)
+    mx = (X1x + X2x) * 0.5
+    my = (X1y + X2y) * 0.5
+   
+
+pg 10 Incorrect slope equation. 
+    The slope should be:
+    slope = (my - ty) / (mx - tx)
+
