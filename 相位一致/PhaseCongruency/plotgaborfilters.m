@@ -157,6 +157,7 @@ function [Ffilter, Efilter, Ofilter, filtersum] = ...
     % The main loop...
 
     filtersum = zeros(rows,cols);
+    
 
     for o = 1:2*norient,                   % For each orientation.
 	angl = filterOrient(o);
@@ -204,7 +205,7 @@ function [Ffilter, Efilter, Ofilter, filtersum] = ...
     end
 
     % Plot sum of filters and slices radially and tangentially
-    figure(1), clf, show(filtersum,1), title('sum of filters');
+    figure(1), clf, imshow(filtersum,1), title('sum of filters');
     
     figure(2), clf
     subplot(2,1,1), plot(filtersum(round(rows/2+1),:))

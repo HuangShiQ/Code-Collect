@@ -61,7 +61,7 @@ function [rj, cj, re, ce] = findendsjunctions(b, disp)
     [re,ce] = find(ends);    
 
     if disp    
-	show(edgeim,1), hold on
+	imshow(b,[]), hold on
 	plot(cj,rj,'r+')
 	plot(ce,re,'g+')    
     end
