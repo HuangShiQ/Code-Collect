@@ -5,12 +5,13 @@
 %  Date     : 12/24/2018
 
 clear all
+close all
 clc
-src = double(rgb2gray(imread('football.jpg')));
+src = double((imread('1.jpg')));
 I = src;
 %% Convert to 256 levels
-I = I-min(I(:));
-I = round(I/max(I(:))*255);
+% I = I-min(I(:));
+% I = round(I/max(I(:))*255);
 [histo,pixval] = hist(I(:),256);
 p = histo/sum(histo);
 w = cumsum(p);
@@ -104,4 +105,6 @@ IDX(I<=index(1)) = 1;
 IDX(I>index(1) & I<=index(2)) = 2;
 IDX(I>index(2) & I<=index(3)) = 3;
 IDX(I>index(3) & I<=index(4)) = 4;
+figure;imshow(IDX,[])
+IDX = otsu(I,5);
 figure;imshow(IDX,[])
